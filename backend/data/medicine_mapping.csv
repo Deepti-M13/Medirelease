@@ -1,0 +1,28 @@
+brand_name,generic_name,expected_price_per_unit,unit
+Crocin,Paracetamol,5,tablet
+Dolo 650,Paracetamol,6,tablet
+Calpol,Paracetamol,5,tablet
+Augmentin,Amoxicillin + Clavulanic Acid,25,tablet
+Mox,Amoxicillin,15,capsule
+Zevacef,Cefuroxime,30,tablet
+Omez,Omeprazole,8,capsule
+Pantocid,Pantoprazole,10,capsule
+Razo,Rabeprazole,12,capsule
+Glycomet,Metformin,3,tablet
+Glucophage,Metformin,4,tablet
+Ecosprin,Aspirin,2,tablet
+Disprin,Aspirin,3,tablet
+Atorva,Atorvastatin,12,tablet
+Lipitor,Atorvastatin,50,tablet
+Amlodac,Amlodipine,5,tablet
+Norvasc,Amlodipine,25,tablet
+Cetrizine,Cetirizine,2,tablet
+Allegra,Fexofenadine,15,tablet
+Azithral,Azithromycin,35,tablet
+Zithromax,Azithromycin,60,tablet
+Brufen,Ibuprofen,8,tablet
+Combiflam,Ibuprofen + Paracetamol,10,tablet
+Nise,Nimesulide,5,tablet
+Voveran,Diclofenac,6,tablet
+Pantop-D,Pantoprazole + Domperidone,15,capsule
+Rabonik-DSR,Rabeprazole + Domperidone,18,capsule

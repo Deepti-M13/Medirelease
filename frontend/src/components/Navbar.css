@@ -1,0 +1,83 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    background: none;
+    color: var(--text-soft);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--teal-primary);
+}
+
+.btn-signin {
+    background: transparent;
+    border: 1px solid var(--teal-primary);
+    color: var(--teal-primary);
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(20, 184, 166, 0.2);
+}
+
+.btn-signin:hover {
+    background: var(--teal-primary);
+    color: white;
+    box-shadow: 0 0 20px var(--teal-glow);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    backdrop-filter: blur(5px);
+}
+
+.about-modal {
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+.about-modal h2 {
+    margin-bottom: 20px;
+}
+
+.about-modal p {
+    color: var(--text-soft);
+    margin-bottom: 10px;
+}

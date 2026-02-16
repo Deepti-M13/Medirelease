@@ -1,0 +1,29 @@
+/* Consolidated App styles - dark theme */
+html, body, #root {
+  background-color: var(--bg-deep) !important;
+  background: var(--bg-deep) !important;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bg-deep) !important;
+  background: var(--bg-deep) !important;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-deep) !important;
+  background: var(--bg-deep) !important;
+}
+
+main {
+  min-height: calc(100vh - 70px);
+  background-color: var(--bg-deep) !important;
+  background: var(--bg-deep) !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

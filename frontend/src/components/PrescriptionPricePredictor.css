@@ -1,0 +1,168 @@
+.price-predictor-card {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.flow-visualizer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 0 40px;
+}
+
+.flow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-deep);
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.flow-step span {
+    color: var(--text-soft);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.flow-line {
+    flex: 1;
+    height: 2px;
+    background: var(--border-color);
+    margin: 0 15px;
+    margin-top: -25px;
+}
+
+.pulse {
+    animation: pulse-teal 2s infinite;
+    border-color: var(--teal-primary);
+}
+
+@keyframes pulse-teal {
+    0% {
+        box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(20, 184, 166, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(20, 184, 166, 0);
+    }
+}
+
+.predictor-input-section {
+    margin-bottom: 40px;
+}
+
+.input-with-button {
+    display: flex;
+    gap: 10px;
+}
+
+.predictor-input {
+    flex: 1;
+    font-size: 1.1rem;
+    padding: 15px 20px;
+}
+
+.predictor-error {
+    color: #ef4444;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.med-result-group {
+    margin-top: 40px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 30px;
+}
+
+.med-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: var(--teal-primary);
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.comparison-card {
+    background: var(--bg-deep);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.site-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-badge {
+    background: rgba(20, 184, 166, 0.1);
+    color: var(--teal-primary);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.med-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.btn-buy {
+    text-align: center;
+    background: var(--border-color);
+    color: var(--text-main);
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.btn-buy:hover {
+    background: var(--teal-primary);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .flow-visualizer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .flow-line {
+        display: none;
+    }
+
+    .input-with-button {
+        flex-direction: column;
+    }
+}

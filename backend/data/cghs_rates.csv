@@ -1,0 +1,32 @@
+category,item_name,cghs_rate,unit
+consultation,General Physician Consultation,300,per_visit
+consultation,Specialist Consultation,500,per_visit
+consultation,ICU Consultation,1000,per_visit
+room_charges,General Ward,800,per_day
+room_charges,Semi-Private Room,1500,per_day
+room_charges,Private Room,2500,per_day
+room_charges,ICU,5000,per_day
+investigations,Complete Blood Count,200,per_test
+investigations,Blood Sugar,100,per_test
+investigations,Lipid Profile,400,per_test
+investigations,Liver Function Test,500,per_test
+investigations,Kidney Function Test,450,per_test
+investigations,Thyroid Profile,600,per_test
+investigations,X-Ray Chest,300,per_test
+investigations,ECG,150,per_test
+investigations,Ultrasound Abdomen,800,per_test
+investigations,CT Scan Head,2500,per_test
+investigations,MRI Scan,5000,per_test
+investigations,Urine Routine,80,per_test
+procedures,Dressing (Simple),150,per_procedure
+procedures,Suturing (Simple),500,per_procedure
+procedures,IV Cannulation,100,per_procedure
+procedures,Nebulization,100,per_session
+procedures,Injection IM/IV,50,per_injection
+procedures,Blood Transfusion,1000,per_unit
+medicines,Paracetamol 500mg,5,per_tablet
+medicines,Amoxicillin 500mg,15,per_capsule
+medicines,Omeprazole 20mg,8,per_capsule
+medicines,Metformin 500mg,3,per_tablet
+medicines,Aspirin 75mg,2,per_tablet
+medicines,Atorvastatin 10mg,12,per_tablet
