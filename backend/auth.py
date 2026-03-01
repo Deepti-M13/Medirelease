@@ -1,6 +1,6 @@
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
-from database import User
+from backend.database import User
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
@@ -18,22 +18,31 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
 def authenticate_user(db: Session, username: str, password: str, role: str):
     """Authenticate a user and verify role"""
     user = db.query(User).filter(User.username == username).first()
-    
+
     if not user:
         return None
-    
+
     if not verify_password(password, user.password_hash):
         return None
-    
+
     if user.role != role:
         # Allow 'past_patient' to login as 'patient'
         if not (role == 'patient' and user.role == 'past_patient'):
             return None
-    
+
     return user
 
 
-def create_user(db: Session, username: str, password: str, role: str, age: int = None, gender: str = None, contact: str = None, treating_doctor_id: int = None):
+def create_user(
+    db: Session,
+    username: str,
+    password: str,
+    role: str,
+    age: int = None,
+    gender: str = None,
+    contact: str = None,
+    treating_doctor_id: int = None,
+):
     """Create a new user"""
     hashed_pw = hash_password(password)
     user = User(
@@ -43,7 +52,7 @@ def create_user(db: Session, username: str, password: str, role: str, age: int =
         age=age,
         gender=gender,
         contact=contact,
-        treating_doctor_id=treating_doctor_id
+        treating_doctor_id=treating_doctor_id,
     )
     db.add(user)
     db.commit()
