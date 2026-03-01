@@ -5,9 +5,9 @@ from sqlalchemy.orm import Session
 from pydantic import BaseModel
 import os
 
-from database import init_db, get_db, User
-from auth import authenticate_user, create_user, hash_password, verify_password
-from routers import doctor, patient, bill_processing, admin, public, prescription
+from backend.database import init_db, get_db, User
+from backend.auth import authenticate_user, create_user, hash_password, verify_password
+from backend.routers import doctor, patient, bill_processing, admin, public, prescription
 
 # --------------------------------------------------
 # FastAPI App
