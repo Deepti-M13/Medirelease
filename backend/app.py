@@ -189,11 +189,9 @@ async def change_username(request: ChangeUsernameRequest, db: Session = Depends(
     user.username = request.new_username
     db.commit()
 
-        return {
+    return {
         "message": "Username changed successfully",
         "user_id": user.id,
         "username": user.username,
         "role": user.role
     }
-    
->>>>>>> 278ee3a (Update project files and set Python 3.11)
